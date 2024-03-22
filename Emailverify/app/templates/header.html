@@ -1,0 +1,24 @@
+<nav style='background-color: #417893;' class="header1">
+    <div class="container">
+        <div class="nav-wrapper">
+            {% comment %} <a href="{% url 'home' %}" class="brand-log">Email verify</a> {% endcomment %}
+            <ul class="left hide-on-med-and-down">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+   
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                {% if request.user.is_authenticated %}
+                    <li><a href="#">{{request.user}}</a></li>
+                    
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                
+                    <li><a href="{% url 'sign-up' %}">Sign-Up</a></li>
+                {% endif %}
+   
+            </ul>
+        </div>
+    </div>
+</nav>

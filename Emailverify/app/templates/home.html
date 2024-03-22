@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style='text-align:center;'>
+<h1>Home</h1>
+{% if request.user.is_authenticated %}
+<h4><b>Welcome</b> You are logged-In</h4>
+<p>Title: Crafting the Perfect Home Page for Your Website: A Guide to Engaging Your Visitors<br>
+ 
+    <b>Introduction:</b><br>
+    The home page of a website serves as the digital front door, welcoming visitorsthe first impression users have of your site. and setting<br>
+    the tone for their browsing experience. It's a crucial element in web design, as it's oftenthe first impression users have of your site.<br>
+    the first impression users have of your site. the first impression users have of your site.Crafting a compelling home page requires<br>
+    careful planning and consideration of various the first impression users have of your site.factors, including design, content, and<br>
+    functionality. In this article, we'll explorethe first impression users have of your site. the key components of an effective home page <br>
+    and provide tips for creating one that engages and captivates your audience.</p>
+{% else %}
+<h5>If you want to visit the details Please Signup Or login </h5>
+{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class='container'>
+  <div style='background: #FFB100;'>
+    {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-primary" role="alert">
+            {{message}}
+        </div>
+          
+        {% endfor %}
+    {% endif %}
+  </div>
+
+
+{% comment %} {{form}} {% endcomment %}
+<div class='row' style="background-color: #FFFFFF;border-radius:10px; width: 300px; height: 240px;margin-top:80px;z-index:100">
+    <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        <table>
+          <tr>
+            <td>{{ form.username.label_tag }}</td>
+            <td>{{ form.username }}</td>
+          </tr>
+          <tr>
+            <td>{{ form.password.label_tag }}</td>
+            <td>{{ form.password }}</td>
+          </tr>
+        </table>
+        <input type="submit" value="Login">
+        {% comment %} <input type="hidden" name="next" value="{{ next }}"> {% endcomment %}
+      </form>
+</div>
+</div>
+{% endblock %}

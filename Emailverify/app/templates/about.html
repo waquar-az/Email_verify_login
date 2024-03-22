@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style='text-align:center;'>
+<h1>About</h1>
+{% if request.user.is_authenticated %}
+<p  style="text-align: center; padding: 60px;margin-left:50px;margin-right:50px;">A Python developer fresher is an individual who is relatively new to the field of software development and has recently started their career as a Python developer. Here are some key points about a Python developer fresher:
+
+    Skills: While a fresher may not have extensive experience, they should possess a solid understanding of Python programming language fundamentals. This includes knowledge of data types, control structures, functions, object-oriented programming concepts, and commonly used libraries such as NumPy, pandas, and requests.</p>
+{% else %}
+<h5>Please <b>Login or signup</b> to visit the About Section..</h5>
+{% endif %}
+</div>
+{% endblock %}
