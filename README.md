@@ -4,6 +4,8 @@
 
 ![Screenshot (896)](https://github.com/waquar-az/Email_verify_login/assets/106869966/2316e209-7cf9-4977-874e-246744666951)
 
+#Go an Mail box and Click the 🔗 Link Then login
+
 ![image](https://github.com/waquar-az/Email_verify_login/assets/106869966/2d089921-4095-431f-8d5d-4302efdde2c1)
 
 ![image](https://github.com/waquar-az/Email_verify_login/assets/106869966/60a43077-cd0a-4dea-97a1-7ae31a121060)
